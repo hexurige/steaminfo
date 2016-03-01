@@ -1,9 +1,14 @@
 """
 this is the start-up class
 """
+
+from Steaminfo import *
+
 #main function
 def main():
-    return
+    steamapi = SteamAPI()
+    dic = steamapi.getAppsDict()
+
 
 if __name__ == "__main__":
 	main()
